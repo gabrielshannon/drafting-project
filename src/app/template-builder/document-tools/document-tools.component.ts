@@ -1,25 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { TemplaterService } from '../template-builder.service';
 import { Template } from '../template.model';
 
 @Component({
-  selector: 'app-template-list',
-  templateUrl: './template-list.component.html',
-  styleUrls: ['./template-list.component.css']
+  selector: 'app-document-tools',
+  templateUrl: './document-tools.component.html',
+  styleUrls: ['./document-tools.component.css']
 })
-export class TemplateListComponent implements OnInit {
-
-  templates!: Template[];
+export class DocumentToolsComponent {
+  templates: Template[] | undefined;
 
   constructor(
    private templaterService: TemplaterService,
-   private router: Router,
-   private route: ActivatedRoute
   ){}
 
   ngOnInit() {
     this.templates = this.templaterService.getTemplates();
+    console.log(this.templates)
   }
 
 }

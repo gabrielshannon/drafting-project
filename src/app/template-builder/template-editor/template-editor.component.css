@@ -1,0 +1,12 @@
+.document-canvas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 12px;
+    width: 450px;
+    height: 700px;
+    background-color: rgb(248 250 252);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}

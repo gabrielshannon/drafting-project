@@ -5,12 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemplateBuilderComponent } from './template-builder/template-builder.component';
 import { HeaderComponent } from './header/header.component';
-
 import { TemplateEditorComponent } from './template-builder/template-editor/template-editor.component';
-import { TemplateListComponent } from './template-builder/template-list/template-list.component';
-import { TemplateItemComponent } from './template-builder/template-list/template-item/template-item.component';
+import { TemplateItemComponent } from './template-builder/document-tools/template-item/template-item.component';
 import { TemplaterService } from './template-builder/template-builder.service';
-import { TemplateStarterComponent } from './template-builder/template-starter/template-starter.component';
+import { DocumentToolsComponent } from './template-builder/document-tools/document-tools.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +16,9 @@ import { TemplateStarterComponent } from './template-builder/template-starter/te
     TemplateBuilderComponent,
     HeaderComponent,
     TemplateEditorComponent,
-    TemplateListComponent,
     TemplateItemComponent,
-    TemplateStarterComponent
+    DocumentToolsComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [TemplaterService],

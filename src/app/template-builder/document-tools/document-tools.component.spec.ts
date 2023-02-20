@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TemplateListComponent } from './template-list.component';
+import { DocumentToolsComponent } from './document-tools.component';
 
-describe('TemplateListComponent', () => {
-  let component: TemplateListComponent;
-  let fixture: ComponentFixture<TemplateListComponent>;
+describe('DocumentToolsComponent', () => {
+  let component: DocumentToolsComponent;
+  let fixture: ComponentFixture<DocumentToolsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TemplateListComponent ]
+      declarations: [ DocumentToolsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TemplateListComponent);
+    fixture = TestBed.createComponent(DocumentToolsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
