@@ -10,6 +10,7 @@ import { TemplateEditorComponent } from './template-builder/template-editor/temp
 import { TemplateListComponent } from './template-builder/template-list/template-list.component';
 import { TemplateItemComponent } from './template-builder/template-list/template-item/template-item.component';
 import { TemplaterService } from './template-builder/template-builder.service';
+import { TemplateStarterComponent } from './template-builder/template-starter/template-starter.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TemplaterService } from './template-builder/template-builder.service';
     HeaderComponent,
     TemplateEditorComponent,
     TemplateListComponent,
-    TemplateItemComponent
+    TemplateItemComponent,
+    TemplateStarterComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [TemplaterService],
